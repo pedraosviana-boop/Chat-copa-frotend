@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073b2a">
+  <meta name="description" content="Mundo das Copas: história, recordes e curiosidades das Copas do Mundo de futebol.">
+  <title>Mundo das Copas | Chatbot</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="stadium-glow" aria-hidden="true"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Mundo das Copas - início">
+        <span class="brand-ball" aria-hidden="true">⚽</span>
+        <span><strong>Mundo das Copas</strong><small>Sua central de conhecimento mundial</small></span>
+      </a>
+      <div class="status"><span class="status-dot"></span><span id="service-status">Assistente de futebol</span></div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> A história vive aqui</p>
+        <h1 id="hero-title">Toda Copa tem<br><em>uma história.</em></h1>
+        <p class="hero-description">Pergunte sobre campeões, lendas, finais inesquecíveis e recordes do maior palco do futebol mundial.</p>
+      </div>
+      <div class="hero-ball" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="trophy">🏆</div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+      </div>
+      <div class="hero-stat"><strong>1930</strong><span>O início de tudo</span><i></i><strong>1 sonho</strong><span>Uma paixão mundial</span></div>
+    </section>
+
+    <section class="chat-card" aria-label="Conversa com o Mundo das Copas">
+      <div class="chat-heading">
+        <div class="assistant-avatar" aria-hidden="true">⚽</div>
+        <div><strong>Assistente Mundo das Copas</strong><p>História, estatísticas e curiosidades</p></div>
+        <button class="reset-button" id="clear-chat" type="button" title="Limpar conversa" aria-label="Limpar conversa">↻</button>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite" aria-relevant="additions text">
+        <article class="message assistant-message">
+          <div class="message-avatar" aria-hidden="true">⚽</div>
+          <div class="bubble-wrap"><span class="speaker">MUNDO DAS COPAS</span><div class="bubble">Bem-vindo! 🌍⚽ Eu sou seu guia pelo universo das Copas do Mundo. Quer descobrir campeões, recordar finais históricas ou conhecer os maiores craques? A bola está com você!</div></div>
+        </article>
+      </div>
+
+      <div class="suggestions" id="suggestions" aria-label="Sugestões de perguntas">
+        <button type="button" class="suggestion">🏆 Quantas Copas o Brasil ganhou?</button>
+        <button type="button" class="suggestion">📅 Quem venceu em 2010?</button>
+        <button type="button" class="suggestion">⭐ Quem é o maior artilheiro?</button>
+        <button type="button" class="suggestion">👑 Campeãs da Copa feminina</button>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="message-input">Sua pergunta sobre as Copas do Mundo</label>
+        <textarea id="message-input" name="message" rows="1" maxlength="1200" placeholder="Pergunte algo sobre as Copas do Mundo..." required></textarea>
+        <button id="send-button" class="send-button" type="submit" aria-label="Enviar mensagem"><span>Enviar</span><b aria-hidden="true">➤</b></button>
+      </form>
+      <div class="composer-footer"><span><span class="lock">♧</span> Especialista exclusivamente em Copas do Mundo</span><span id="char-count">0 / 1200</span></div>
+    </section>
+    <footer><span>FEITO PARA QUEM VIVE O FUTEBOL</span><span>As respostas podem conter imprecisões. Confira dados importantes em fontes oficiais.</span></footer>
+  </main>
+  <script src="./js/config.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
